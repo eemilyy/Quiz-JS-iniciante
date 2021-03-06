@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>Quiz JS</title>
 </head>
 <body>
-    <h1>Teste JS</h1>
-    <p>
-        Bem Vindo(a)! Você irá participar de um quiz. Insira seu nome abaixo:
-    </p>
-    <input type="text" id="nomePlayer">
-    <input type="submit" value="COMEÇAR!" class="envioNome">
+    <h1>Quiz</h1>
+    
+    <form>
+        <label for="nomeJogador">Digite seu nome</label>
+        <input type="text" id="nomeJogador">
+        <input type="submit" value="Começar!" id="botao">        
+    </form>
+
+    <p id="texto"></p>
 
     <script type="text/javascript" src="JS/script.js" defer></script>
 
