@@ -4,14 +4,13 @@ window.alert(`A ${nome} tem ${idade} anos`);
 console.log(nome.length);*/
 
 var clicou = window.document.getElementById('botao');
-//var clicou = getElementById('botao');
 clicou.addEventListener('click', nomear);
 
 
 function nomear(){
-    var caixaNome = window.document.getElementById('nomeJogador');
-    var nome = String(caixaNome.value);
-    console.log(nome);
+    var caixaNome = window.document.getElementById('nomeJogador').value;
+    //var nome = String(caixaNome.value);
+    console.log(caixaNome);
     var para = window.document.querySelector('#texto');
-    para.innerHTML = `Bem vinda ${nome}`;
+    para.innerHTML = `Bem vinda ${caixaNome}`;
 }
