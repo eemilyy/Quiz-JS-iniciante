@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(to top, #edeec9, #bfd8bd, #77bfa3) fixed;
+    font-family: 'Courier Prime', monospace; 
 }
 
 h1{
@@ -10,36 +11,10 @@ p{
     font-family: 'Courier Prime', monospace; 
 }
 
-.envioNome{
-    border-radius: 100px;
-    box-shadow: 5px 5px black;
+.botao{
+    font-family: 'Courier Prime', monospace; 
     padding: 10px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.envioNome span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.envioNome span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.envioNome:hover span {
-    padding-right: 25px;
-}
-
-.envioNome:hover span:after {
-    opacity: 1;
-    right: 0;
+    border-radius: 50px;
+    border-color: black;
+    box-shadow: 5px 5px black;
 }
