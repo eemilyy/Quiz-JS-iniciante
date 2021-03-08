@@ -15,6 +15,9 @@ function nomear(){
     if(!isNaN(nome)){  //verificar pois aceita numeros com letras
         window.alert("Digite apenas letras!");
     }
+    else{
+        window.location.href = "q1.html";
+    }
 
     var para = window.document.querySelector('#texto'); //criando variável para pegar o p que está no HTML
     para.innerHTML = `Bem vinda ${nome}`; //innerHTML aparece texto
