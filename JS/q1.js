@@ -21,13 +21,22 @@ for (var i = 0; i < botoes.length; i++){
        var resposta = this.id;
        if(resposta !== 'r3'){
            window.document.getElementById(resposta).style.background = "red";
+
+           botoes.disable = true;
+
+
+           /*setTimeout(function() { //colocando tempo para poder executar a chamada da proxima pag
+            window.location.href = "q2.html";
+        }, 1000);*/
        }
        else{
             window.document.getElementById(resposta).style.background = "green";
-            
+
+            /*setTimeout(function() { //colocando tempo para poder executar a chamada da proxima pag
+                window.location.href = "q2.html";
+            }, 1000);*/
        }
-       //var classes = this.classList;
   });
 
-  
+
 }
