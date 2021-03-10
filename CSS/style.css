@@ -28,3 +28,8 @@ p{
 .campoText{
     border-radius: 50px;
 }
+
+#cod{
+    border: solid black;
+    padding: 10px;
+}
