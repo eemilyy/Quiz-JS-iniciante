@@ -1,6 +1,9 @@
 body{
     background: linear-gradient(to top, #edeec9, #bfd8bd, #77bfa3) fixed;
     font-family: 'Courier Prime', monospace; 
+    display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 h1{
@@ -9,9 +12,11 @@ h1{
 
 p{
     font-family: 'Courier Prime', monospace; 
+    margin: 20px;
 }
 
 .botao{
+    /*margin: 25px;*/
     font-family: 'Courier Prime', monospace; 
     padding: 10px;
     border-radius: 50px;
@@ -27,9 +32,15 @@ p{
 
 .campoText{
     border-radius: 50px;
+    margin-bottom: 20px;
+    width: 30%;
 }
 
 #cod{
     border: solid black;
     padding: 10px;
+}
+
+div{
+    justify-content: center;
 }

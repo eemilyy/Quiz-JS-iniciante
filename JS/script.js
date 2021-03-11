@@ -20,5 +20,5 @@ function nomear(){
     }
 
     var para = window.document.querySelector('#texto'); //criando variável para pegar o p que está no HTML
-    para.innerHTML = `Bem vinda ${nome}`; //innerHTML aparece texto
+    para.innerHTML = `Bem vindx ${nome}`; //innerHTML aparece texto
 }
