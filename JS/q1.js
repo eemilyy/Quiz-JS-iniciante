@@ -22,9 +22,6 @@ for (var i = 0; i < botoes.length; i++){
        if(resposta !== 'r3'){
            window.document.getElementById(resposta).style.background = "red";
 
-           botoes.disable = true;
-
-
            setTimeout(function() { //colocando tempo para poder executar a chamada da proxima pag
             window.location.href = "q2.html";
         }, 1000);
