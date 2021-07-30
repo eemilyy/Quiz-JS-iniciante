@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>Quiz JS</title>
 </head>
 <body>
+    <div class="card"> <!--Caixa de pergunta-->
+        <div id="questoes" class="hide">
+            <div id="questao">Questao</div>
+            <div id="botoes-questoes" class="botao-grade">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+            </div>
+        </div>
+        <div class="controles">
+            <button id="jogar" class="jogar-botao btn">Jogar</button>
+            <button id="proximo" class="proximo-botao btn hide">Próximo</button>
+        </div>
+    </div>
     
-    <h1>Quiz</h1>
-
-    <label for="nomeJogador">Digite seu nome</label>
-    <input type="text" id="nomeJogador" class="campoText">
-    <input type="button" value="Começar!" class="botao" id="submit">
-    <!--<input type="button" value="Começar!" class="botao" id="submit" onclick="nomear()">   Uma outra maneira de chamar a função do JS-->
-
-
-    <p id="texto"></p>
-
     <script type="text/javascript" src="JS/script.js" defer></script>
 
-    <!--https://coolors.co/edeec9-dde7c7-bfd8bd-98c9a3-77bfa3
-    https://coolors.co/cebebe-ece2d0-d5b9b2-a26769-6d2e46
-https://coolors.co/ffd6ff-e7c6ff-c8b6ff-b8c0ff-bbd0ff
--->
 </body>
 </html>
