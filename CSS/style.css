@@ -1,3 +1,11 @@
 .hide {
     display: none;
 }
+
+.certo {
+    background-color: green;
+}
+
+.errado {
+    background-color: red;
+}
