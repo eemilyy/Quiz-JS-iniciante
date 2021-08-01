@@ -3,7 +3,9 @@ const prox = document.getElementById('proximo');
 const questoesCard = document.getElementById('questoes');
 const elementosQuestoes = document.getElementById('questao');
 const respostaQuestoes = document.getElementById('botoes-questoes');
+const placar = document.getElementById('placar');
 let i = 0
+let score = 0
 
 botaoJogar.addEventListener('click', iniciarJogo);
 prox.addEventListener('click', () => {
@@ -33,6 +35,7 @@ function limpar() {
 }
 
 function mostrarQuestao() {
+    placar.innerText = "Score: " + score
     //var i = 0
     //while(questoes[i] != null){
         elementosQuestoes.innerText = questoes[i].questao;
@@ -52,6 +55,8 @@ function mostrarQuestao() {
 
 function respostaQuestao(e) {
     const respostaSelecionada = e.target;
+    const correta = respostaSelecionada.dataset.correto
+    atualizaPlacar(correta)
     Array.from(respostaQuestoes.children).forEach(button => {
         //setStatusClass(button, button.dataset.correct)
         if(button.dataset.correto){
@@ -69,7 +74,15 @@ function respostaQuestao(e) {
     else{
         botaoJogar.innerText = 'Jogar novamente'
         botaoJogar.classList.remove('hide')
-        i = 0
+        i = 0;
+        score = 0;
+    }
+}
+
+function atualizaPlacar(resposta){
+    if(resposta){
+        score++
+        placar.innerText = "Score: " + score
     }
 }
 
