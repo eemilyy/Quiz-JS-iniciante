@@ -1,11 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    background-image: linear-gradient(135deg, #0b090a, #0f0d0f, #121013, #141316, #151619, #161921, #171b2a, #191e32, #2d1c3a, #471237, #5d0326, #660708);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 .hide {
     display: none;
 }
 
-.certo {
+.btn.certo {
     background-color: green;
 }
 
-.errado {
+.btn.errado {
     background-color: red;
+}
+
+.card {
+    justify-content: center;
+    background-color: #fefae0;
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#questoes, .controles {
+    display:grid;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: black ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: grey;
 }

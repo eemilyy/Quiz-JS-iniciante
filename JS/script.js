@@ -39,6 +39,7 @@ function mostrarQuestao() {
         questoes[i].respostas.forEach(resposta => {
             const botao = document.createElement('button');
             botao.innerText = resposta.texto;
+            botao.classList.add('btn')
             if (resposta.correto) {
                 botao.dataset.correto = resposta.correto
             } 
