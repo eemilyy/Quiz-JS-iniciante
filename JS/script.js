@@ -35,6 +35,7 @@ function limpar() {
 }
 
 function mostrarQuestao() {
+    respostaQuestoes.classList.remove('hide')
     placar.innerText = "Score: " + score
     //var i = 0
     //while(questoes[i] != null){
@@ -72,11 +73,20 @@ function respostaQuestao(e) {
         prox.classList.remove('hide')
     }
     else{
-        botaoJogar.innerText = 'Jogar novamente'
-        botaoJogar.classList.remove('hide')
-        i = 0;
-        score = 0;
+        fimDeJogo();        
     }
+}
+
+function fimDeJogo(){
+    if(score == questoes.length - 1){
+        elementosQuestoes.innerText = 'PARABENS, VOCÊ ACERTOU TUDO!'
+        respostaQuestoes.classList.add('hide')
+    }
+    
+    botaoJogar.innerText = 'Jogar novamente'
+    botaoJogar.classList.remove('hide')
+    i = 0;
+    score = 0;
 }
 
 function atualizaPlacar(resposta){
@@ -110,6 +120,15 @@ const questoes = [
         respostas: [
             { texto: 'Continente', correto: false },
             { texto: 'País', correto: true }
+        ]
+    },
+    {
+        questao: "Um ano bissexto possui quantos dias?",
+        respostas: [
+            { texto: '365', correto: false },
+            { texto: '666', correto: false },
+            { texto: '366', correto: true },
+            { texto: '6', correto: false }
         ]
     }
 ]
