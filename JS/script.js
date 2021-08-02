@@ -67,8 +67,8 @@ function respostaQuestao(e) {
             button.classList.add('errado')
         }
     })
-    console.log(questoes.length)
-    console.log(i)
+    //console.log(questoes.length)
+    //console.log(i)
     if (i < questoes.length - 1) {
         prox.classList.remove('hide')
     }
@@ -78,11 +78,11 @@ function respostaQuestao(e) {
 }
 
 function fimDeJogo(){
-    if(score == questoes.length - 1){
+    if(score == questoes.length){
         elementosQuestoes.innerText = 'PARABENS, VOCÊ ACERTOU TUDO!'
         respostaQuestoes.classList.add('hide')
     }
-    
+
     botaoJogar.innerText = 'Jogar novamente'
     botaoJogar.classList.remove('hide')
     i = 0;
